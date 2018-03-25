@@ -1,0 +1,68 @@
+body
+    background-color: #5A9AEE
+    font-family: $font-reg
+
+a
+    text-decoration: none
+
+input, button, textarea
+    outline: none
+
+h1
+    font-family: $font-bold
+    color: $color-full-dark
+    font-size: 28px
+    line-height: 35px
+    margin-bottom: 35px
+
+blockquote
+    padding-left: 30px
+    margin-bottom: 40px
+    position: relative
+    font-family: $font-bold
+    color: $color-full-dark
+    font-size: 17px
+    line-height: 28px
+    &:before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        width: 2px
+        height: 100%
+        background-color: $color-green
+
+// .news-content::-webkit-scrollbar
+//     width: 6px
+
+// .news-content::-webkit-scrollbar-thumb
+//     border-radius: 10px
+//     background-color: #f0f0f0
+
+// .news-content::-webkit-scrollbar-track
+//     background-color: #fff
+
+// .tab-content::-webkit-scrollbar
+//     width: 6px
+
+// .tab-content::-webkit-scrollbar-thumb
+//     border-radius: 10px
+//     background-color: #f0f0f0
+
+// .tab-content::-webkit-scrollbar-track
+//     background-color: #fff
+
+// common class
+
+button.button
+    background-color: $color-green
+    color: #fff
+    padding: 7px 15px
+    border: none
+    border-radius: 18px
+    cursor: pointer
+
+// mixins
+@mixin sample
+    padding-left: 65px
