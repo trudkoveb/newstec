@@ -1,2 +1,4 @@
 node_modules
 .bowerrc
+src/libs
+dist

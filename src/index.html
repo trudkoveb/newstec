@@ -10,51 +10,53 @@
     <main>
         <section>
             <p class="title">Newstec</p>
-            <ul>
-                <li class="active">
-                    <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#home"></use></svg>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#newspaper"></use></svg>
-                    <a href="#">News</a>
-                </li>
-                <li>
-                    <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#avatar"></use></svg>
-                    <a href="#">Startups</a>
-                </li>
-                <li>
-                    <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#briefcase"></use></svg>
-                    <a href="#">Business</a>
-                </li>
-                <li>
-                    <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#books-stack-of-three"></use></svg>
-                    <a href="#">Education</a>
-                </li>
-                <li>
-                    <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#man-travelling"></use></svg>
-                    <a href="#">Travel</a>
-                </li>
-                <li>
-                    <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#heartbeat"></use></svg>
-                    <a href="#">Life</a>
-                </li>
-                <li>
-                    <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#video-player"></use></svg>
-                    <a href="#">Video</a>
-                </li>
-                <li>
-                    <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#calendar"></use></svg>
-                    <a href="#">Events</a>
-                </li>
-            </ul>
+            <nav>
+                <ul>
+                    <li class="active">
+                        <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#home"></use></svg>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#newspaper"></use></svg>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#avatar"></use></svg>
+                        <a href="#">Startups</a>
+                    </li>
+                    <li>
+                        <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#briefcase"></use></svg>
+                        <a href="#">Business</a>
+                    </li>
+                    <li>
+                        <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#books-stack-of-three"></use></svg>
+                        <a href="#">Education</a>
+                    </li>
+                    <li>
+                        <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#man-travelling"></use></svg>
+                        <a href="#">Travel</a>
+                    </li>
+                    <li>
+                        <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#heartbeat"></use></svg>
+                        <a href="#">Life</a>
+                    </li>
+                    <li>
+                        <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#video-player"></use></svg>
+                        <a href="#">Video</a>
+                    </li>
+                    <li>
+                        <svg class="icon"><use xlink:href="img/svg/icons-sprite.svg#calendar"></use></svg>
+                        <a href="#">Events</a>
+                    </li>
+                </ul>
+            </nav>
         </section>
         <section>
             <div class="tabs">
-                <a class="active" href="#">Latest</a>
-                <a href="#">Popular</a>
+                <a data-tab="tab-1" class="active" href="#">Latest</a>
+                <a data-tab="tab-2" href="#">Popular</a>
             </div>
-            <div class="tab-content">
+            <div id="tab-1" class="tab-content current">
                 <div class="tab-content_wrapper">
                     <a href="#">
                         <div>
@@ -70,6 +72,23 @@
                         </div>
                     </a>
                 </div>
+                <div class="tab-content_wrapper">
+                    <a href="#">
+                        <div>
+                            <img src="img/zhyAL0r3-AM.jpg" alt="News image">
+                        </div>
+                        <div>
+                            <p class="time">1 hour ago</p>
+                            <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit magni iure corrupti consectetur, alias dolor natus perspiciatis quaerat quas voluptatibus quae, dolores? Qui similique nam, provident quo modi dignissimos eos eligendi voluptatibus minima eius laudantium non. Laboriosam sit, quo officiis!</p>
+                            <p class="author">
+                                <span>by</span>
+                                <object><a href="#">Cheech Marin</a></object>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="tab-2" class="tab-content">
                 <div class="tab-content_wrapper">
                     <a href="#">
                         <div>
@@ -93,7 +112,25 @@
                     <div><img class="avatar" src="img/cheech.jpeg" alt="Avatar"></div>
                     <p>By <a href="#">Cheech Marin </a>2 days ago</p>
                 </div>
-                <button class="button">Share</button>
+                <div class="drop-down_wrapper">
+                    <button class="button drop-down">Share</button>
+                    <ul class="drop-down_content">
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="img/svg/icons-sprite.svg#facebook-letter-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="img/svg/icons-sprite.svg#vk-social-network-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="news-content">
                 <h1>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur adipisicing elit. Earum, delectus!</h1>
@@ -103,5 +140,7 @@
             </div>
         </section>
     </main>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

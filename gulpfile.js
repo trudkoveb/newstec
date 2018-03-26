@@ -49,8 +49,7 @@ gulp.task('min-image', () =>
 
 gulp.task('min-js', function() {
     return gulp.src([
-            'src/libs/jquery/dist/jquery.min.js',
-            'src/libs/slick/dist/slick.min.js'
+            'src/libs/jquery/dist/jquery.min.js'
         ])
     .pipe(concat('libs.min.js'))
     .pipe(uglifyJs())
