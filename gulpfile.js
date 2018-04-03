@@ -44,7 +44,7 @@ gulp.task('px-rem', function() {
 gulp.task('min-image', () =>
     gulp.src('src/img/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dist/img'))
 );
 
 gulp.task('min-js', function() {
@@ -66,7 +66,7 @@ gulp.task('min-css', ['sass'] , function() {
 });
 
 gulp.task('watch', ['browser-sync'], function() {
-    gulp.watch('src/sass/**/*.sass', ['sass']);
+    gulp.watch('src/sass/**/*.sass', ['sass', 'min-css']);
     gulp.watch('src/js/**/*.js', browserSync.reload);
     gulp.watch('src/**/*.html', browserSync.reload);
 });
