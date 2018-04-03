@@ -1,4 +1,5 @@
 node_modules
 .bowerrc
 src/libs
+src/css
 dist

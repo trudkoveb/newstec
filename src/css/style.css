@@ -124,7 +124,7 @@ button.button {
   cursor: pointer; }
   button.button.drop-down {
     padding-right: 35px;
-    background: #3ab117 url("../../img/svg/icon-arrow-down.svg") 85% 50% no-repeat;
+    background: #3ab117 url("../img/svg/icon-arrow-down.svg") 85% 50% no-repeat;
     -webkit-background-size: 15% 15%;
             background-size: 15%; }
 
